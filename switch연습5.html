@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>연습문제</title>
+</head>
+
+<body>
+  <script>
+    var site = prompt("교보문고, 영풍문고, 종로서적 중 즐겨 사용하는 사이트는?", "");
+
+    var url; //링크주소를 담을 변수
+    switch (site) {
+     
+      case "교보문고": url = "https://www.kyobobook.co.kr";
+        break;
+
+      case "영풍문고": url = "https://www.ypbooks.co.kr";
+        break;
+
+      case "종로서적": url = "https://www.jongnobooks.com";
+        break;
+
+      default: alert("보기 중에 없는 사이트입니다.");
+        location.reload()//새로 고침
+    }
+    console.log(url)
+
+    //url변수에 값이 들어 있을 경우(변수에 주소를 지정했을 경우)url변수에 있는 경로로 이동합니다.
+    if (url) location.href = url;
+    //undefined와 null을 false입니다
+  </script>
+</body>
+
+</html>

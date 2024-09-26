@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>연습문제</title>
+</head>
+<body>
+  <script>
+    let operand1 = prompt("첫번째 피연산자 입력(정수만 입력)");
+    let operand2 = prompt("두번째 피연산자 입력(정수만 입력)");
+    let operator = prompt("연산자 입력");
+
+    //문자열을 숫자로 변환해야 연산이 됩니다.
+    operand1 = Number(operand1)
+    operand2 = Number(operand2)
+
+    switch(operator) {
+      case "+": console.log(operand1 + operand2);
+        break;
+      case "-": console.log(operand1 - operand2);
+        break;
+      case "*": console.log(operand1 * operand2);
+        break;
+      case "/": console.log(operand1 / operand2);
+        break;
+      case "%": console.log(operand1 % operand2);
+        break;
+      default : 
+        alert("+,-,*,/,% 연산자만 사용하세요")
+        location.reload();
+    }
+  </script>
+</body>
+</html>

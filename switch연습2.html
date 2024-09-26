@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>연습문제</title>
+</head>
+<body>
+  <script>
+    let fruit = prompt("알파벳 입력");
+    // fruit = fruit.toUpperCase()
+
+    switch(fruit){
+      case "A":
+      case "a":
+        console.log("Apple")
+        break;
+      case "B":
+      case "b":
+        console.log("Banana")
+        break;
+      case "C":
+      case "c":
+        console.log("Cacao")
+        break;
+      default: 
+        alert("보기에는 없는 내용을 입력하였습니다.")
+        location.reload();
+    }
+  </script>
+</body>
+</html>
