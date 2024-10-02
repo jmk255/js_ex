@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // function printTime(msg) {
+    //   console.log(msg, new Date());
+    // }
+
+    // setTimeout(() => {
+    //   console.log(3000);
+    // }, 1000);
+    
+    // (function (msg) {
+    //   console.log(msg);
+    // })("hello");
+
+    const printTime = (msg)=>{
+      console.log(msg, new Date());
+    }
+    setTimeout(printTime, 2000, '2초후');
+    setTimeout(()=>{
+      console.log(33333)
+    },3000);
+    
+    (function (msg1) {
+      console.log(msg1)
+    }) ("hello")
+  </script>
+</body>
+
+</html>
