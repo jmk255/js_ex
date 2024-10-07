@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>선택자</title>
+</head>
+
+<body>
+  <!-- HTML 부분 -->
+  <div id='div_1' class='red blue yellow'>
+    red blue yellow
+  </div>
+  <div id='div_2' class='green blue red'>
+    green blue red
+  </div>
+  <div id='div_3' class='yellow green red'>
+    yellow green red
+  </div>
+  <button type='button' onclick='getMyClass()'>
+    class이름으로 찾기
+  </button>
+  <script>
+    function getMyClass() {
+      const div_list = document.getElementsByClassName('red blue');
+
+      // class가 'red blue'인 element 개수 출력
+      const div_list_length = div_list.length;
+      alert(div_list_length);
+
+      // class가 'red blue'인 element 목록 출력
+      for (let i = 0; i < div_list_length; i++) {
+        console.log(div_list[i].innerText);
+      }
+    }
+  </script>
+</body>
+
+</html>
